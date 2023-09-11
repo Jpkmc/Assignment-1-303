@@ -4,7 +4,7 @@ int main() {
     //SETTING THE FILE TO A VARIABLE
     ifstream data("data.txt");
     //CREATING THE ARRAY AND SETTING THE SIZE TO 100
-    int arr[101];
+    int arr[150];
     //creating variables 
     int size = 0, num, eNum = 0, rNum = 0, newValue = 0, index = 0, user = 0;
     string rORr;
