@@ -59,12 +59,15 @@ void replaceORremove(int arr[], int& size, int rNum, string rORr) {
 	if (rNum < 0 || rNum >= size) {
 		throw out_of_range("Index given is not in size of the array");
 	}
+	//checking if the user has typed remove
 	if (rORr == "remove") {
+		//finding the number in the array and removing from the array 
 		for (int i = rNum; i < size - 1; i++) {
 			arr[i] = arr[i + 1];
 		}
 		size--;
 	}
+	//if anything else is typed then it will make the index chosen 0 
 	else {
 		arr[rNum] = 0; 
 	}
