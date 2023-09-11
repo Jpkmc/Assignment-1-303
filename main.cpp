@@ -22,8 +22,10 @@ int main() {
         cout << arr[i] << " ";
     }
     */
+    //allowing the user to try each option multiple times
     while (tORf == true) {
         try {
+            //shwoing the user the option 
             cout << "1. Find a number in the array."
                 << endl << "2. Change a number in the array."
                 << endl << "3. Add a number to the function."
@@ -70,6 +72,7 @@ int main() {
             cout << "Not an available option" << endl << endl;
           }
         }
+        //all of the catching errors 
         catch (const out_of_range& e) {
             cout << "Error: " << e.what() << endl;
           break;
@@ -78,11 +81,13 @@ int main() {
             cout << "Error: " << e.what() << endl;
           break;
         }
+        //just in case a error is not caught by ones above 
         catch (...) {
             cout << "Error has occured." << endl;
           break;
         }
     }
+    //printing the final array and all of the changes that have been made
   cout << endl << "The final array with all the changes looks like: " << endl;
         for (int i = 0; i < size; i++) {
             cout << arr[i] << " ";
