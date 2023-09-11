@@ -1,8 +1,4 @@
 #include "header.h"
-
-
-
-
 //function 1 
 void finder(int arr[], int& size, int eNum) {
 	//checking if the number exist in the array 
@@ -35,7 +31,7 @@ void modValue(int arr[], int& size, int index, int newValue){
 //function 3
 void add(int arr[], int& size, int num) {
 	//creating the index limit 
-	int x = 101;
+	int x = 150;
   /*
   //checking if the number given exist in the array.
   	for (int i = 0; i < size; i++) {
